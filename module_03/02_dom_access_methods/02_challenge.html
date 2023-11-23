@@ -52,6 +52,11 @@
         </div>
         
         <script>
+            let nameTags = document.getElementsByTagName('h1');
+
+            for (var i = 0; i < nameTags.length; i++) {
+                nameTags[i].innerHTML = "Hello World";
+            }
         </script>
     </body>
 </html>
