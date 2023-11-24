@@ -28,8 +28,17 @@
     <body>
 
     
-    <script>
-        
-    </script>
+        <script>
+            // Step 1: Creating a planet
+            var planet = document.createElement("div");
+            planet.className = "planet";
+            planet.style.backgroundColor = "#3498db";
+            document.body.appendChild(planet);
+
+            // Step 2: Creating a moon and append it to the planet
+            var moon = document.createElement("div");
+            moon.className = "moon";
+            planet.appendChild(moon);
+        </script>
     </body>
 </html>
