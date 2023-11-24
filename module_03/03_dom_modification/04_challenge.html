@@ -15,6 +15,12 @@
         <script>
             var ohnoesSays = document.getElementById("ohnoes-says");
             var winstonSays = document.getElementById("winston-says");
+
+            // Step 1: Use innerHTML to set what Oh Noes says, including a strong or em tag
+            ohnoesSays.innerHTML = "I feel <strong>lonely</strong> because I'm always surrounded by errors.";
+
+            // Step 2: Use textContent to show what Winston says - without including any HTML tags
+            winstonSays.textContent = "No comments.";
         </script>
     </body>
 </html>
