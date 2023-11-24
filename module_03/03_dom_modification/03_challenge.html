@@ -25,10 +25,15 @@
         </ul>
         
         <script>
-        var answers = document.querySelectorAll('#answers li');
-        var rightAnswer = answers[0];
-        var wrongAnswer1 = answers[1];
-        var wrongAnswer2 = answers[2];
+            var answers = document.querySelectorAll('#answers li');
+            var rightAnswer = answers[0];
+            var wrongAnswer1 = answers[1];
+            var wrongAnswer2 = answers[2];
+
+            // Step 1: Add the 'right-answer' class to rightAnswer and the 'wrong-answer' class to wrongAnswer1 and wrongAnswer2
+            rightAnswer.classList.add('right-answer');
+            wrongAnswer1.classList.add('wrong-answer');
+            wrongAnswer2.classList.add('wrong-answer');
         </script>
     </body>
 </html>
