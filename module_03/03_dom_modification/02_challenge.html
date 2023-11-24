@@ -6,27 +6,40 @@
     </head>
     <body>
 
-    <h1>Style guide</h1>
+        <h1>Style guide</h1>
 
-    <p>The hottest color to wear right now is:
-        <span id="trendy-color">?</span>
-    </p>
-    
-    <p>This is the trendy way to sign an autograph:
-        <span id="trendy-handwriting">?</span>
-    </p>
-    
-    <p>This is the trendy way to frame photographs:
-        <br>
-        <img id="trendy-frame" src="https://www.kasandbox.org/programming-images/avatars/mr-pink.png" alt="Cool avatar">
-    </p>
-    
-    
-    <script>
-    var colorEl = document.getElementById("trendy-color");
-    var handEl  = document.getElementById("trendy-handwriting");
-    var frameEl = document.getElementById("trendy-frame");
-    </script>
+        <p>The hottest color to wear right now is:
+            <span id="trendy-color">?</span>
+        </p>
+        
+        <p>This is the trendy way to sign an autograph:
+            <span id="trendy-handwriting">?</span>
+        </p>
+        
+        <p>This is the trendy way to frame photographs:
+            <br>
+            <img id="trendy-frame" src="https://www.kasandbox.org/programming-images/avatars/mr-pink.png" alt="Cool avatar">
+        </p>
+        
+        
+        <script>
+            var colorEl = document.getElementById("trendy-color");
+            var handEl  = document.getElementById("trendy-handwriting");
+            var frameEl = document.getElementById("trendy-frame");
+
+            // Step 1: Set the innerHTML of colorEl to my favorite color and set matching color property
+            var favoriteColor = "purple";
+            colorEl.innerHTML = favoriteColor;
+            colorEl.style.color = favoriteColor;
+
+            // Step 2: Set the text of handEl to my favorite celebrity's name and set matching CSS font family property
+            var favoriteCelebrity = "Broda Shaggi";
+            handEl.innerHTML = favoriteCelebrity;
+            handEl.style.fontFamily = "Arial, sans-serif";
+
+            // Step 3: Set the border of frameEl to some style that I think looks good
+            frameEl.style.border = "2px dashed blue";
+        </script>
     
     </body>
 </html>
