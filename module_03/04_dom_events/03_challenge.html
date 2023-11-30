@@ -23,8 +23,16 @@
     <script>
         var libButton = document.getElementById('lib-button');
         var libIt = function() {
+          var libButton = document.getElementById('lib-button');
+        var libIt = function() {
+            var nounValue = document.getElementById("noun").value;
+            var adjectiveValue = document.getElementById("adjective").value;
+            var personValue = document.getElementById("person").value;
+
             var storyDiv = document.getElementById("story");
-            storyDiv.innerHTML = "??Your story here";
+            storyDiv.innerHTML = "Once upon a time, there was a " + adjectiveValue + " " + nounValue + " named " + personValue + ".";
+        };
+        libButton.addEventListener('click', libIt);
         };
         libButton.addEventListener('click', libIt);
         
