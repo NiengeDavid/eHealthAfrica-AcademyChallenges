@@ -17,7 +17,12 @@
         <div id="cat-chat"></div>
         
         <script>
-        
+            let cat = document.getElementById("cat-pic");
+            let result = document.getElementById("cat-chat");
+            function pet() {
+                result.innerText = "Meow!";
+            }
+            cat.addEventListener('click', pet)
         </script>
     </body>
 </html>
